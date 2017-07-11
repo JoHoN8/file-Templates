@@ -4,7 +4,7 @@ var gulp = require('gulp'),
   rename = require('gulp-rename'),
   concat = require('gulp-concat'),
   spsave = require('gulp-spsave'),
-  creds = require("D:/siteSettings.js");;
+  creds = require("");;
 
 // Copy files
 gulp.task('copy', function() {
