@@ -57,8 +57,8 @@ gulp.task('default', ['clean'], function() {
 gulp.task("spSave", function(){
   return gulp.src("./build/*.js")
 	.pipe(spsave({
-		siteUrl: "", //absolue url
-		folder: "YourAppAssets/js"
+		siteUrl: "", //absolue url to site
+		folder: "YourAppAssets/js" //libraryName/folder<- if needed
 	}, creds));
 });
 
