@@ -1,0 +1,49 @@
+{
+  "name": "project-name",
+  "version": "2.0.1",
+  "main": "src/library.js",
+  "scripts": {
+    "testFile": "webpack --config ./webpackConfigs/webpack.config.testing.js",
+    "devBuild": "webpack --config ./webpackConfigs/webpack.config.dev.js",
+    "production": "webpack --config ./webpackConfigs/webpack.config.prod.js",
+    "prodBuild": "run-s devBuild production",
+    "docs": "jsdoc2md ./src/library.js > README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "url here"
+  },
+  "keywords": [
+    "words to match project by"
+  ],
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "contributors": [
+    {
+      "name": "",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "pd-sputil": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-loader": "latest",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "eslint": "^4.5.0",
+    "jsdoc-to-markdown": "^3.0.0",
+    "npm-run-all": "^4.1.1",
+    "webpack": "latest",
+    "webpack-dev-server": "latest"
+  }
+}
